@@ -90,7 +90,16 @@ while not done:
             keyName = "left"
         elif key[pygame.K_RIGHT]:
             keyName = "right"
-        if snake.head.x < 0 or snake.head.x >= 500 or snake.head.y < 0 or snake.head.y >= 500 or screen.get_at((snake.head.x, snake.head.y))[:3] == (0, 255, 0):
+            
+        if snake.head.x < 0 :
+            snake.head.x += 500
+        elif snake.head.x >= 500 :
+            snake.head.x -= 500
+        elif snake.head.y < 0 :
+            snake.head.y += 500
+        elif snake.head.y >= 500:
+            snake.head.y -= 500
+        elif screen.get_at((snake.head.x, snake.head.y))[:3] == (0, 255, 0):
             pygame.time.wait(1500)
             done = True
         
