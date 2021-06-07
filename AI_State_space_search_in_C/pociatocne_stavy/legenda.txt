@@ -1,0 +1,4 @@
+[velkost] [X] [Y] [smer]
+
+CERVENE AUTO JE VZDY PRVE
+SUBOR MUSI MAT NAZOV CISLA

@@ -1,0 +1,22 @@
+
+0 0 * * * * 
+* * * * * * 
+* * * * * * 
+* * * * * * 
+* * * * * * 
+* * * * * * 
+Depth = 0
+
+Posunul som auto s id 0 smerom vpravo.
+Posunul som auto s id 0 smerom vpravo.
+Posunul som auto s id 0 smerom vpravo.
+Posunul som auto s id 0 smerom vpravo.
+
+* * * * 0 0 
+* * * * * * 
+* * * * * * 
+* * * * * * 
+* * * * * * 
+* * * * * * 
+Depth = 4
+

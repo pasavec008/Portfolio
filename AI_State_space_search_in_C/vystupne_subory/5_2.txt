@@ -1,0 +1,34 @@
+
+0 0 1 * 5 * 
+7 * 1 * 5 * 
+7 * 1 3 6 6 
+2 2 2 3 * * 
+* 8 * 4 4 * 
+* 8 * * * * 
+Depth = 0
+
+Posunul som auto s id 4 smerom vpravo.
+Posunul som auto s id 3 smerom dole.
+Posunul som auto s id 3 smerom dole.
+Posunul som auto s id 2 smerom vpravo.
+Posunul som auto s id 2 smerom vpravo.
+Posunul som auto s id 2 smerom vpravo.
+Posunul som auto s id 1 smerom dole.
+Posunul som auto s id 0 smerom vpravo.
+Posunul som auto s id 0 smerom vpravo.
+Posunul som auto s id 1 smerom dole.
+Posunul som auto s id 1 smerom dole.
+Posunul som auto s id 6 smerom vlavo.
+Posunul som auto s id 6 smerom vlavo.
+Posunul som auto s id 5 smerom dole.
+Posunul som auto s id 0 smerom vpravo.
+Posunul som auto s id 0 smerom vpravo.
+
+* * * * 0 0 
+7 * * * 5 * 
+7 * 6 6 5 * 
+* * 1 2 2 2 
+* 8 1 3 4 4 
+* 8 1 3 * * 
+Depth = 16
+

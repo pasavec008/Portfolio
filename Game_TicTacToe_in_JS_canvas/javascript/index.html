@@ -1,0 +1,19 @@
+<head>
+    <title>Piskvorky</title>
+    <link rel="icon" type="image/icon" href="../backgrounds/daisy.ico"/>
+    <script src = "Area.js"></script>
+    <script src = "View.js"></script>
+    <script src = "Model.js"></script>
+    <script src = "Controller.js"></script>
+    <script>
+        function init(){
+            var controller = new Controller();
+            controller.start(document.getElementById("canvas"));
+        }
+    </script>
+</head>
+
+<body style = "margin: 0; padding: 0;" onload="init()">
+    <canvas id = canvas></canvas>
+    
+</body>

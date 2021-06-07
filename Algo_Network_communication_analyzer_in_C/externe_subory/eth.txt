@@ -1,0 +1,19 @@
+0200 XEROX_PUP
+0201 PUP_Addr_Trans
+0800 Internet_IPv4
+0801 X.75_Internet
+0805 X.25_Level3
+0806 ARP
+8035 Reverse_ARP
+809B Appletalk
+80F3 Appletalk_AARP
+8100 IEEE_802.1Q_VLAN
+8137 Novell_IPX
+86DD IPv6
+880B PPP
+8847 MPLS
+8848 MPLS_with_upstream_assigned_label
+8863 PPPoE_Discovery_Stage
+8864 PPPoE_Session_Stage
+
+2004 DTP

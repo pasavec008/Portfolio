@@ -1,0 +1,112 @@
+<html>
+	<head>
+		<title>Alienoids</title>
+		<link rel="icon" href="textures/entities/wormhole.png">
+		
+		<script src="javascript/global/globalne+spustenie.js"></script>
+		<script src="javascript/global/levels.js"></script>
+		
+		<script src="javascript/model/textures.js"></script>
+		<script src="javascript/model/spaceship.js"></script>
+		<script src="javascript/model/naboje.js"></script>
+		<script src="javascript/model/kolizia.js"></script>
+		<script src="javascript/model/enemies.js"></script>
+		
+		<script src="javascript/view/hud+stav+otoc.js"></script>
+		<script src="javascript/view/draw+shop.js"></script>
+		<script>
+		
+		//Poznámka autora: Hudba a zvuky by boli rozmanitejšie, ale musel som to kvôli AISu skomprimovať do 20Mb :(
+		
+		//CONTROLLER
+		
+			// keyboard events
+			window.onkeydown = function(event) {
+			  keys[event.keyCode] = true;
+			  //console.log(keys);
+			};
+			window.onkeyup = function(event) {
+			  keys[event.keyCode] = false;
+			};
+			
+			//mouse events
+			function kliknutie(event)
+			{
+				click=true;
+				setTimeout(function(){click=false;},50);
+			}
+			
+			function suradnice(event)
+			{
+				x=event.offsetX;
+				y=event.offsetY;
+			}
+		
+			//pohyb objektov
+			function move() {
+				for (var i in asteroidy) 
+				{
+					asteroidy[i].move();
+				}
+				for(var i in naboje)
+				{
+					naboje[i].move();
+				}
+				spaceship.move();
+			}
+			//kontrola kolizie
+			function stret(){
+				if(spaceship.naraz>0)
+					spaceship.naraz--;
+				for (var i in asteroidy) {
+					if(spaceship.naraz<=0)	//kolízia asteroidov so spaceship
+					{
+						if(kolizia(asteroidy[i],spaceship));
+						else(kolizia(spaceship,asteroidy[i]));
+					}
+					
+					for(var y in naboje) //kolízia každého náboja s každým enemy
+					{
+						if(kolizia(asteroidy[i],naboje[y]));
+						else(kolizia(naboje[y],asteroidy[i]));
+					}
+				}
+			}
+			//jeden tik
+			function step() {
+				if(pauza==1)
+				{
+					draw();
+					move();
+					stret();
+				}
+				else if(pauza==2)
+					shopmenu();
+				else if(pauza==3)
+					zaciatok();
+				else if(pauza==-2 || pauza==4)
+					prehra();
+			}
+			
+			
+		</script>
+	</head>
+	<body onload="spust()">
+		<center><canvas onmousemove="suradnice(event)" id="platno" width="1000" height="800" style="border: solid black"></canvas></center>
+		<br>
+		<!--↓↓↓↓↓ VÝVOJÁRSKE TLAČÍTKA URČENÉ PRE LEPŠIE TESTOVANIE ↓↓↓↓↓-->
+		<!--
+		<center>
+			<button onclick="pauza=2;">Shop</button>
+			<button onclick="spaceship.score+=10000">peniaze</button>
+			<button onclick="level_2()">lvl2</button>
+			<button onclick="level_3()">lvl3</button>
+			<button onclick="level_4()">lvl4</button>
+			<button onclick="level_5()">lvl5</button>
+			<button onclick="level_6()">lvl6</button>
+			<button onclick="level_7()">lvl7</button>
+			<button onclick="pauza=4">Win screen</button> 
+		</center>
+		-->
+	</body>
+</html>

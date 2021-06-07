@@ -1,0 +1,38 @@
+
+* * 3 3 3 * 
+* * * * * * 
+* 0 0 * * 1 
+* * * * 2 1 
+* * * * 2 1 
+* * * * 2 * 
+Depth = 0
+
+Posunul som auto s id 3 smerom vpravo.
+Posunul som auto s id 2 smerom hore.
+Posunul som auto s id 2 smerom hore.
+Posunul som auto s id 3 smerom vlavo.
+Posunul som auto s id 3 smerom vlavo.
+Posunul som auto s id 3 smerom vlavo.
+Posunul som auto s id 2 smerom dole.
+Posunul som auto s id 2 smerom dole.
+Posunul som auto s id 1 smerom dole.
+Posunul som auto s id 3 smerom vpravo.
+Posunul som auto s id 2 smerom hore.
+Posunul som auto s id 3 smerom vpravo.
+Posunul som auto s id 0 smerom vpravo.
+Posunul som auto s id 3 smerom vpravo.
+Posunul som auto s id 2 smerom dole.
+Posunul som auto s id 0 smerom vpravo.
+Posunul som auto s id 3 smerom vlavo.
+Posunul som auto s id 3 smerom vlavo.
+Posunul som auto s id 3 smerom vlavo.
+Posunul som auto s id 0 smerom vpravo.
+
+3 3 3 * * * 
+* * * * * * 
+* * * * 0 0 
+* * * * 2 1 
+* * * * 2 1 
+* * * * 2 1 
+Depth = 20
+

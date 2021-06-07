@@ -1,0 +1,15 @@
+00 Null_SAP
+02 LLC_Sublayer_Management_Individual
+03 LLC_Sublayer_Management_Group
+06 IP
+0E PROWAY_Network_Management
+42 BPDU
+4E MMS
+5E ISI_IP
+7E X.25_PLP
+8E PROWAY_Active_Station_List_Maintenance
+AA SNAP
+E0 IPX
+F4 LAN
+FE ISO
+FF RAW
