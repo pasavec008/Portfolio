@@ -1,0 +1,48 @@
+version: '3.8'
+
+services:
+  mysql_db:
+    image: mysql
+    restart: always
+    volumes:
+      - "./setup.sql:/docker-entrypoint-initdb.d/setup.sql"
+    ports:
+      - "9906:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_HOST: localhost
+
+  api:
+    build:
+      dockerfile: Dockerfile
+      context: "./backend"
+    depends_on:
+      - mysql_db
+    volumes:
+      - /app/node_modules
+      - ./backend:/app
+    environment:
+      MYSQL_HOST_IP: mysql_db
+    ports:
+        - 3001:3001
+    restart: unless-stopped
+
+  eshop:
+    build:
+      dockerfile: Dockerfile
+      context: ./frontend
+    volumes:
+      - /app/node_modules
+      - ./frontend:/app
+    ports:
+        - 3000:3000
+
+  adminer:
+      image: adminer:latest
+      restart: unless-stopped
+      ports:
+        - 8000:8080
+      depends_on:
+        - mysql_db
+      environment:
+        ADMINER_DEFAULT_SERVER: mysql_db

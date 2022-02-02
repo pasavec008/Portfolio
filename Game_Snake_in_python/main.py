@@ -123,9 +123,9 @@ while not done:
             snakes[1].updateSnake(keyName, food)
         
         for snake in snakes:
-            if snake.head.x < 0 :
+            if snake.head.x < 0:
                 snake.head.x += snake.size * 50
-            elif snake.head.x >= snake.size * 50 :
+            elif snake.head.x >= snake.size * 50:
                 snake.head.x -= snake.size * 50
             elif snake.head.y < 0 :
                 snake.head.y += snake.size * 50

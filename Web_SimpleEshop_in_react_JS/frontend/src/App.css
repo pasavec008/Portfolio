@@ -1,0 +1,51 @@
+* {
+  margin: 0px
+}
+
+.product{
+  margin: 10px;
+  width: 150px;
+}
+
+.productPicture{
+  width: 150px;
+  height: 150px;
+}
+
+.productComponent{
+  width: 150px;
+  margin: auto;
+}
+
+.productText{
+  text-align: center;
+}
+
+.productBox{
+  display: flex;
+}
+
+.hidden{
+  display: none;
+}
+
+.orderText{
+  font: 20px Arial, sans-serif;
+}
+
+.adPicture{
+  width: 600px;
+  height: 400px;
+}
+
+.orderTable{
+  width: 100%;
+}
+
+table, th, td {
+  border:1px solid black;
+}
+
+.adaptInput{
+  width: 90%;
+}
