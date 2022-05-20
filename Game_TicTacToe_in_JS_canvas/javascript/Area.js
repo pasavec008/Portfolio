@@ -32,15 +32,15 @@ class Area{
             }
         }
 
-        this.bush.src = "../textures/bush2.png";
-        this.grass.src = "../textures/grass2.png";
-        this.texture0.src = "../textures/bush2.png";
-        this.texture1.src = "../textures/bee2.png";
-        this.texture2.src = "../textures/daisy2.png";
-        this.winFrame.src = "../textures/frame.png";
+        this.bush.src = "textures/bush2.png";
+        this.grass.src = "textures/grass2.png";
+        this.texture0.src = "textures/bush2.png";
+        this.texture1.src = "textures/bee2.png";
+        this.texture2.src = "textures/daisy2.png";
+        this.winFrame.src = "textures/frame.png";
 
-        this.musicON.src = "../textures/soundON.png";
-        this.musicOFF.src = "../textures/soundOFF.png";
+        this.musicON.src = "textures/soundON.png";
+        this.musicOFF.src = "textures/soundOFF.png";
     }
 
     setStart(x, y, tileSize){

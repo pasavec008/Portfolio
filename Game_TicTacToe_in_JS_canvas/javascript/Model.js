@@ -7,8 +7,8 @@ class Model{
     area;
     mode = 0;
     music = -1;
-    meadow = new Audio("../music/theMeadow.mp3");;
-    forest = new Audio("../music/natureSoundsForStressRelief.mp3");;
+    meadow = new Audio("music/theMeadow.mp3");;
+    forest = new Audio("music/natureSoundsForStressRelief.mp3");;
 
     constructor(platno, context, screen){
         this.platno = platno;
@@ -35,9 +35,9 @@ class Model{
 
     bushChoice(x){
         if(x < this.screen.width / 2)
-            this.area.texture0.src = "../textures/bush2.png";
+            this.area.texture0.src = "textures/bush2.png";
         else
-            this.area.texture0.src = "../textures/grass2.png";
+            this.area.texture0.src = "textures/grass2.png";
     }
 
     startMusic(){

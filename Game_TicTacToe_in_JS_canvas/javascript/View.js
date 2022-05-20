@@ -12,8 +12,8 @@ class View{
         this.platno = platno;
         this.context = context;
         this.screen = screen;
-        this.background.src = "../backgrounds/2.jpg";
-        this.choiceSize.src = "../textures/choice.png"
+        this.background.src = "backgrounds/2.jpg";
+        this.choiceSize.src = "textures/choice.png"
 
     }
 
